@@ -1,0 +1,33 @@
+{
+  "name": "phonePlus.adc.plugin.callreceiver",
+  "version": "0.0.1",
+  "description": "(BETA VERSION) this let you detect incoming phone call and inject view for transfering call",
+  "cordova": {
+    "id": "phonePlus.adc.plugin.callreceiver",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmedb49/phonePlus.adc.plugin.callreceiver.git"
+  },
+  "keywords": [
+    "phonegap",
+    "calendar",
+    "phone",
+    "call",
+    "phone-call",
+    "ringing",
+    "phone-state",
+    "call-state",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Ahmed CHTARA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmedb49/io.adc.plugin.callreceiver/issues"
+  },
+  "homepage": "https://github.com/ahmedb49/io.adc.plugin.callreceiver#readme"
+}
