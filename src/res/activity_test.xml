@@ -5,7 +5,7 @@
 
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context="com.callreceiver.adc.callreceiver.Test"
+    tools:context="io.adc.adccallreceiver.Test"
     android:id="@+id/root">
 
     <RelativeLayout

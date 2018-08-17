@@ -38,21 +38,8 @@ public class AdcCallReceiver extends CordovaPlugin {
 			if(intent.getStringExtra(TelephonyManager.EXTRA_STATE).equals(TelephonyManager.EXTRA_STATE_RINGING)){
                 msg="RINGING"; 
                // sendResult(msg);
-			   Intent local = new Intent();
-				local.setAction("com.hello.action");
-				context.sendBroadcast(local);
-            }
-            else if(intent.getStringExtra(TelephonyManager.EXTRA_STATE).equals(TelephonyManager.EXTRA_STATE_OFFHOOK)){
-                msg="OFFHOOK";
-               // sendResult(msg);
-			   Intent local = new Intent();
-				local.setAction("com.hello.action");
-				context.sendBroadcast(local);
-                 
-            }
-            else if(intent.getStringExtra(TelephonyManager.EXTRA_STATE).equals(TelephonyManager.EXTRA_STATE_IDLE)){
-                msg="IDLE";
-				//sendResult(msg);
+			   
+				
 				final Handler handler = new Handler();
 				handler.postDelayed(new Runnable() {
                 @Override
@@ -68,6 +55,21 @@ public class AdcCallReceiver extends CordovaPlugin {
 
                 }
             }, 2000);
+            }
+            else if(intent.getStringExtra(TelephonyManager.EXTRA_STATE).equals(TelephonyManager.EXTRA_STATE_OFFHOOK)){
+                msg="OFFHOOK";
+               // sendResult(msg);
+			   Intent local = new Intent();
+				local.setAction("com.hello.action");
+				context.sendBroadcast(local);
+                 
+            }
+            else if(intent.getStringExtra(TelephonyManager.EXTRA_STATE).equals(TelephonyManager.EXTRA_STATE_IDLE)){
+                msg="IDLE";
+				//sendResult(msg);
+				Intent local = new Intent();
+				local.setAction("com.hello.action");
+				context.sendBroadcast(local);
             }
             
             

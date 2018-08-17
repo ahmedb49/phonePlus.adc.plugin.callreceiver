@@ -45,7 +45,7 @@ public class Test extends Activity {
         this.setFinishOnTouchOutside(false);
         super.onCreate(savedInstanceState);
 
-		Application app = cordova.getActivity().getApplication();
+		Application app = getApplication();
 		String package_name = app.getPackageName();
         Resources resources = app.getResources();
         setContentView(resources.getIdentifier("activity_test", "layout", package_name));
